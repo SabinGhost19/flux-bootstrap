@@ -3,4 +3,3 @@ kind: Kustomization
 resources:
   - infra-tools-identity-tf-kustomization.yaml
   - infra-tools-identity-kustomization.yaml
-  - infra-tools-identity-day2-kustomization.yaml

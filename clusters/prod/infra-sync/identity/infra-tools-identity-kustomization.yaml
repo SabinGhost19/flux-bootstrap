@@ -16,5 +16,5 @@ spec:
   healthChecks:
     - apiVersion: helm.toolkit.fluxcd.io/v2
       kind: HelmRelease
-      name: keycloak-operator
+      name: keycloak
       namespace: platform-identity
