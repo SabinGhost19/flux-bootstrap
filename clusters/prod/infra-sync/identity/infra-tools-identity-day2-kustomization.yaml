@@ -15,3 +15,16 @@ spec:
     kind: GitRepository
     name: infra-tools
   path: ./platform/identity/keycloak/day2
+  healthChecks:
+    - apiVersion: k8s.keycloak.org/v2alpha1
+      kind: Keycloak
+      name: keycloak
+      namespace: platform-identity
+    - apiVersion: k8s.keycloak.org/v2alpha1
+      kind: KeycloakRealmImport
+      name: master-prod-realm
+      namespace: platform-identity
+    - apiVersion: k8s.keycloak.org/v2alpha1
+      kind: KeycloakOIDCClient
+      name: oauth2-proxy-client
+      namespace: platform-identity

@@ -18,7 +18,3 @@ spec:
       kind: HelmRelease
       name: keycloak-operator
       namespace: platform-identity
-    - apiVersion: k8s.keycloak.org/v2alpha1
-      kind: Keycloak
-      name: keycloak
-      namespace: platform-identity
