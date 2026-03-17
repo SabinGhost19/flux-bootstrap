@@ -4,9 +4,6 @@ metadata:
   name: infra-tools-security
   namespace: flux-system
 spec:
-  dependsOn:
-    - name: infra-tools-observability
-    - name: infra-tools-identity
   interval: 5m0s
   retryInterval: 1m0s
   timeout: 3m0s

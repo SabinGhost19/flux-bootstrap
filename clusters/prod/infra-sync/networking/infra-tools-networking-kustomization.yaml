@@ -4,8 +4,6 @@ metadata:
   name: infra-tools-networking
   namespace: flux-system
 spec:
-  dependsOn:
-    - name: infra-tools-sources
   interval: 5m0s
   retryInterval: 1m0s
   timeout: 15m0s

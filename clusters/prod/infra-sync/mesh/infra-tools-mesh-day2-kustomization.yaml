@@ -4,8 +4,6 @@ metadata:
   name: infra-tools-mesh-day2
   namespace: flux-system
 spec:
-  dependsOn:
-    - name: infra-tools-mesh
   interval: 5m0s
   retryInterval: 1m0s
   timeout: 5m0s
