@@ -5,8 +5,10 @@ resources:
   - infra-tools-cert-manager-day2-kustomization.yaml
   - infra-tools-spire-kustomization.yaml
   - infra-tools-kyverno-kustomization.yaml
+  - infra-tools-kyverno-day2-kustomization.yaml
   - infra-tools-keycloak-bootstrap-kustomization.yaml
   - infra-tools-minio-kustomization.yaml
+  - infra-tools-minio-day2-kustomization.yaml
   - infra-tools-harbor-kustomization.yaml
   - infra-tools-tekton-kustomization.yaml
   - infra-tools-test-workload-zt-kustomization.yaml
