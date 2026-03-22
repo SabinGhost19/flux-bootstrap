@@ -1,0 +1,17 @@
+apiVersion: notification.toolkit.fluxcd.io/v1beta3
+kind: Alert
+metadata:
+  name: infra-tools-test-env-to-tekton
+  namespace: flux-system
+spec:
+  providerRef:
+    name: tekton-eventlistener
+  eventSeverity: info
+  eventSources:
+    - kind: Kustomization
+      name: infra-tools-test-env
+  exclusionList:
+    - ".*dry-run.*"
+  eventMetadata:
+    sourcePath: deploy/test-env
+    gpgSigned: "true"

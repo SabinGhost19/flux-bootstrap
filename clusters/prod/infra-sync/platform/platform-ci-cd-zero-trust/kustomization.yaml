@@ -1,0 +1,15 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - infra-tools-cert-manager-kustomization.yaml
+  - infra-tools-cert-manager-day2-kustomization.yaml
+  - infra-tools-spire-kustomization.yaml
+  - infra-tools-kyverno-kustomization.yaml
+  - infra-tools-keycloak-bootstrap-kustomization.yaml
+  - infra-tools-minio-kustomization.yaml
+  - infra-tools-harbor-kustomization.yaml
+  - infra-tools-tekton-kustomization.yaml
+  - infra-tools-test-workload-zt-kustomization.yaml
+  - infra-tools-test-env-kustomization.yaml
+  - flux-tekton-provider.yaml
+  - flux-tekton-alert.yaml
