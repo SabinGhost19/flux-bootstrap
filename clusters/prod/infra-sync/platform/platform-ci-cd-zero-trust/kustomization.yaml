@@ -10,6 +10,7 @@ resources:
   - infra-tools-minio-kustomization.yaml
   - infra-tools-minio-day2-kustomization.yaml
   - infra-tools-harbor-kustomization.yaml
+  - infra-tools-tekton-operator-kustomization.yaml
   - infra-tools-tekton-kustomization.yaml
   - infra-tools-test-workload-zt-kustomization.yaml
   - infra-tools-test-env-kustomization.yaml
