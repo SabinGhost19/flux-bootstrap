@@ -4,8 +4,6 @@ metadata:
   name: infra-tools-tekton-operator
   namespace: flux-system
 spec:
-  dependsOn:
-    - name: infra-tools-secrets
   interval: 5m0s
   retryInterval: 1m0s
   timeout: 10m0s
