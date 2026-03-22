@@ -7,7 +7,7 @@ spec:
   dependsOn:
     - name: infra-tools-identity
     - name: infra-tools-secrets
-    - name: infra-tools-cert-manager-day2
+    - name: infra-tools-cert-manager
     - name: infra-tools-keycloak-bootstrap
     - name: infra-tools-minio
   interval: 5m0s

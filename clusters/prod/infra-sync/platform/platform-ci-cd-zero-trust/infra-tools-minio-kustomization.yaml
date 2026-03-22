@@ -6,7 +6,7 @@ metadata:
 spec:
   dependsOn:
     - name: infra-tools-secrets
-    - name: infra-tools-cert-manager-day2
+    - name: infra-tools-cert-manager
   interval: 5m0s
   retryInterval: 1m0s
   timeout: 15m0s
