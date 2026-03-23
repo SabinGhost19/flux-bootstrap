@@ -7,7 +7,6 @@ spec:
   dependsOn:
     - name: infra-tools-kyverno
     - name: infra-tools-spire
-    - name: infra-tools-tekton
   interval: 5m0s
   retryInterval: 1m0s
   timeout: 10m0s
