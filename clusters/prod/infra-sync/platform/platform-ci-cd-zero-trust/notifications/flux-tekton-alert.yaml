@@ -10,8 +10,9 @@ spec:
   eventSources:
     - kind: GitRepository
       name: infra-tools-test-cicd-app-source
+      namespace: flux-system
   inclusionList:
-    - ".*stored artifact for revision.*"
+    - ".*stored artifact for (revision|commit).*"
   exclusionList:
     - ".*dry-run.*"
   eventMetadata:
