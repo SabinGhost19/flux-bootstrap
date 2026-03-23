@@ -14,5 +14,6 @@ resources:
   - infra-tools-tekton-kustomization.yaml
   - infra-tools-test-workload-zt-kustomization.yaml
   - infra-tools-test-env-kustomization.yaml
+  - infra-tools-test-cicd-app-source-gitrepository.yaml
   - flux-tekton-provider.yaml
   - flux-tekton-alert.yaml

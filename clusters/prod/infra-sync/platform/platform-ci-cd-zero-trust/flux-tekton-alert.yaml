@@ -8,10 +8,12 @@ spec:
     name: tekton-eventlistener
   eventSeverity: info
   eventSources:
-    - kind: Kustomization
-      name: infra-tools-test-env
+    - kind: GitRepository
+      name: infra-tools-test-cicd-app-source
+  inclusionList:
+    - ".*stored artifact for revision.*"
   exclusionList:
     - ".*dry-run.*"
   eventMetadata:
-    sourcePath: deploy/test-env
+    sourcePath: apps/test-cicd-app
     gpgSigned: "true"
