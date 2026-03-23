@@ -1,19 +1,19 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - infra-tools-cert-manager-kustomization.yaml
-  - infra-tools-cert-manager-day2-kustomization.yaml
-  - infra-tools-spire-kustomization.yaml
-  - infra-tools-kyverno-kustomization.yaml
-  - infra-tools-kyverno-day2-kustomization.yaml
-  - infra-tools-keycloak-bootstrap-kustomization.yaml
-  - infra-tools-minio-kustomization.yaml
-  - infra-tools-minio-day2-kustomization.yaml
-  - infra-tools-harbor-kustomization.yaml
-  - infra-tools-tekton-operator-kustomization.yaml
-  - infra-tools-tekton-kustomization.yaml
-  - infra-tools-test-workload-zt-kustomization.yaml
-  - infra-tools-test-env-kustomization.yaml
-  - infra-tools-test-cicd-app-source-gitrepository.yaml
-  - flux-tekton-provider.yaml
-  - flux-tekton-alert.yaml
+  - kustomizations/base/infra-tools-cert-manager-kustomization.yaml
+  - kustomizations/day2/infra-tools-cert-manager-day2-kustomization.yaml
+  - kustomizations/base/infra-tools-spire-kustomization.yaml
+  - kustomizations/base/infra-tools-kyverno-kustomization.yaml
+  - kustomizations/day2/infra-tools-kyverno-day2-kustomization.yaml
+  - kustomizations/day2/infra-tools-keycloak-bootstrap-kustomization.yaml
+  - kustomizations/day2/infra-tools-minio-kustomization.yaml
+  - kustomizations/day2/infra-tools-minio-day2-kustomization.yaml
+  - kustomizations/base/infra-tools-harbor-kustomization.yaml
+  - kustomizations/base/infra-tools-tekton-operator-kustomization.yaml
+  - kustomizations/base/infra-tools-tekton-kustomization.yaml
+  - kustomizations/workloads/infra-tools-test-workload-zt-kustomization.yaml
+  - kustomizations/workloads/infra-tools-test-env-kustomization.yaml
+  - sources/infra-tools-test-cicd-app-source-gitrepository.yaml
+  - notifications/flux-tekton-provider.yaml
+  - notifications/flux-tekton-alert.yaml
