@@ -5,11 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   dependsOn:
-    - name: infra-tools-identity
     - name: infra-tools-secrets
-    - name: infra-tools-cert-manager
-    - name: infra-tools-keycloak-bootstrap
-    - name: infra-tools-minio-day2
   interval: 5m0s
   retryInterval: 1m0s
   timeout: 15m0s
